@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.pt-56 {
+  padding-top: 56px;
+}
+
+.container {
+  width: 1200px;
+}
+
+.header {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 960px;
+  border: solid 1px #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-content {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 85px;
+}
+
+.header .header-content p {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.header .header-content h1 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 106px;
+}
+
+.header .header-content h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 32px;
+  margin-left: 13px;
+}
+
+.header .headerIcon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 13px;
+  margin-top: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .headerIcon-list li {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .headerIcon-list li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header .headerIcon-list li a {
+  display: block;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.about img {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about-info li {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.about-info li:not(:first-child) {
+  margin-bottom: 8px;
+}
+
+.about-info li:last-child {
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.about-list {
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #000;
+  width: 384px;
+  padding-top: 28px;
+  padding-bottom: 56px;
+}
+
+.about-list li {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.about-list li:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #891818;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.about-list li:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.content {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 160px;
+}
+
+.content img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.content img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.content h2 {
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 42px;
+  margin-top: 12px;
+}
+
+.content p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 32px;
+}
+
+.content .content-photo {
+  margin: 0 auto;
+  margin-top: 68px;
+}
+
+.content .content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .content-list li {
+  margin-left: 24px;
+  margin-top: 40px;
+}
+
+.work {
+  text-align: center;
+  padding-bottom: 144px;
+}
+
+.work .work-content {
+  margin-bottom: 8px;
+}
+
+.work .work-content h2 {
+  font-size: 64px;
+  line-height: 84px;
+  margin-bottom: 16px;
+}
+
+.work .work-content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.work .work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.work .work-list li {
+  margin-top: 48px;
+}
+
+.work .work-list li p {
+  font-size: 20px;
+  line-height: 42px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.work .work-list li img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.work .work-list li img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+/* contact */
+.contact {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.contact h2 {
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.contact li {
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 16px;
+}
+
+.contact li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact li a:hover {
+  color: red;
+}
+/*# sourceMappingURL=all.css.map */
